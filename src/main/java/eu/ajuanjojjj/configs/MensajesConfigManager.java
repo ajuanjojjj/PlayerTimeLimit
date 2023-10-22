@@ -18,16 +18,16 @@ public class MensajesConfigManager {
 	private FileConfiguration messages = null;
 	private File messagesFile = null;
 	private String rutaMessages;
-	
+
 	public MensajesConfigManager(PlayerTimeLimit plugin) {
-		this.plugin = plugin;	
+		this.plugin = plugin;
 	}
-	
+
 	public void configurar() {
 		registerMessages();
 		setMessages();
 	}
-	
+
 	public void setMessages() {
 		FileConfiguration messages = getMessages();
 		MensajesManager msgManager = new MensajesManager(messages.getString("prefix"));
@@ -38,53 +38,53 @@ public class MensajesConfigManager {
 		msgManager.setTimeHours(messages.getString("timeHours"));
 		msgManager.setTimeDays(messages.getString("timeDays"));
 		msgManager.setTimeInfinite(messages.getString("timeInfinite"));
-		
+
 		this.plugin.setMensajesManager(msgManager);
 	}
-	
-	public void registerMessages(){
-		  messagesFile = new File(plugin.getDataFolder(), "messages.yml");
-		  rutaMessages = messagesFile.getPath();
-			if(!messagesFile.exists()){
-				this.getMessages().options().copyDefaults(true);
-				saveMessages();
+
+	public void registerMessages() {
+		messagesFile = new File(plugin.getDataFolder(), "messages.yml");
+		rutaMessages = messagesFile.getPath();
+		if (!messagesFile.exists()) {
+			this.getMessages().options().copyDefaults(true);
+			saveMessages();
+		}
+	}
+
+	public void saveMessages() {
+		try {
+			messages.save(messagesFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public FileConfiguration getMessages() {
+		if (messages == null) {
+			reloadMessages();
+		}
+		return messages;
+	}
+
+	public void reloadMessages() {
+		if (messages == null) {
+			messagesFile = new File(plugin.getDataFolder(), "messages.yml");
+		}
+		messages = YamlConfiguration.loadConfiguration(messagesFile);
+		Reader defConfigStream;
+		try {
+			defConfigStream = new InputStreamReader(plugin.getResource("messages.yml"), "UTF8");
+			if (defConfigStream != null) {
+				YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
+				messages.setDefaults(defConfig);
 			}
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
 		}
-		
-		public void saveMessages() {
-			try {
-				messages.save(messagesFile);
-			}catch (IOException e) {
-				 e.printStackTrace();
-		 	}
-		}
-		  
-		public FileConfiguration getMessages() {
-			if (messages == null) {
-			   reloadMessages();
-			}
-			return messages;
-		}
-		  
-		public void reloadMessages() {
-			if (messages == null) {
-			    messagesFile = new File(plugin.getDataFolder(), "messages.yml");
-			}
-			messages = YamlConfiguration.loadConfiguration(messagesFile);
-			Reader defConfigStream;
-			try {
-				defConfigStream = new InputStreamReader(plugin.getResource("messages.yml"), "UTF8");
-				if (defConfigStream != null) {
-				     YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
-				     messages.setDefaults(defConfig);
-				}
-			} catch (UnsupportedEncodingException e) {
-				e.printStackTrace();
-			}
-			setMessages();
-		}
-		
-		public String getPath() {
-			return rutaMessages;
-		}
+		setMessages();
+	}
+
+	public String getPath() {
+		return rutaMessages;
+	}
 }

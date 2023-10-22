@@ -10,17 +10,18 @@ import eu.ajuanjojjj.utils.UtilsTime;
 public class PlayerTimeLimitAPI {
 
 	private static PlayerTimeLimit plugin;
+
 	public PlayerTimeLimitAPI(PlayerTimeLimit plugin) {
 		this.plugin = plugin;
 	}
-	
+
 	public static String getTimeLeft(Player player) {
 		PlayerManager playerManager = plugin.getPlayerManager();
 		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
 		int timeLimit = playerManager.getTimeLimitPlayer(player);
 		return playerManager.getTimeLeft(p, timeLimit);
 	}
-	
+
 	public static String getTotalTime(Player player) {
 		PlayerManager playerManager = plugin.getPlayerManager();
 		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());

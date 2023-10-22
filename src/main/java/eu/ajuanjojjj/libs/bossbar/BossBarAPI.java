@@ -11,8 +11,9 @@ import eu.ajuanjojjj.managers.MensajesManager;
 
 public class BossBarAPI {
 
-	public static BossBar create(Player jugador,String titulo,BarColor color,BarStyle style) {
-		BossBar bossBar = Bukkit.getServer().createBossBar(MensajesManager.getMensajeColor(titulo), color, style, new BarFlag[0]);
+	public static BossBar create(Player jugador, String titulo, BarColor color, BarStyle style) {
+		BossBar bossBar = Bukkit.getServer().createBossBar(MensajesManager.getMensajeColor(titulo), color, style,
+				new BarFlag[0]);
 		bossBar.removeAll();
 		bossBar.addPlayer(jugador);
 		bossBar.setProgress(0);

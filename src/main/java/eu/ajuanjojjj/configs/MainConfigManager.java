@@ -1,6 +1,5 @@
 package eu.ajuanjojjj.configs;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,18 +23,19 @@ public class MainConfigManager {
 	private List<String> worldWhitelistWorlds;
 	private String worldWhitelistTeleportCoordinates;
 	private ArrayList<Notification> notifications;
-	
+
 	public MainConfigManager(PlayerTimeLimit plugin) {
 		this.plugin = plugin;
 	}
+
 	public void configurar() {
 		FileConfiguration config = plugin.getConfig();
 
 		timeLimits = new ArrayList<TimeLimit>();
 		notifications = new ArrayList<Notification>();
-		for(String key : config.getConfigurationSection("time_limits").getKeys(false)) {
-			int time = config.getInt("time_limits."+key);
-			TimeLimit timeLimit = new TimeLimit(key,time);
+		for (String key : config.getConfigurationSection("time_limits").getKeys(false)) {
+			int time = config.getInt("time_limits." + key);
+			TimeLimit timeLimit = new TimeLimit(key, time);
 			timeLimits.add(timeLimit);
 		}
 		actionBar = config.getBoolean("action_bar");
@@ -46,17 +46,16 @@ public class MainConfigManager {
 		worldWhitelistEnabled = config.getBoolean("world_whitelist_system.enabled");
 		worldWhitelistWorlds = config.getStringList("world_whitelist_system.worlds");
 		worldWhitelistTeleportCoordinates = config.getString("world_whitelist_system.teleport_coordinates_on_kick");
-		
-		
-		if(config.contains("notification")) {
-			for(String key : config.getConfigurationSection("notification").getKeys(false)) {
+
+		if (config.contains("notification")) {
+			for (String key : config.getConfigurationSection("notification").getKeys(false)) {
 				int seconds = Integer.valueOf(key);
 				List<String> message = null;
-				if(config.contains("notification."+key+".message")) {
-					message = config.getStringList("notification."+key+".message");
+				if (config.contains("notification." + key + ".message")) {
+					message = config.getStringList("notification." + key + ".message");
 				}
-				
-				Notification notification = new Notification(seconds,message);
+
+				Notification notification = new Notification(seconds, message);
 				notifications.add(notification);
 			}
 		}
@@ -65,36 +64,46 @@ public class MainConfigManager {
 	public boolean isActionBar() {
 		return actionBar;
 	}
+
 	public boolean isBossBar() {
 		return bossBar;
 	}
+
 	public String getBossBarColor() {
 		return bossBarColor;
 	}
+
 	public String getBossBarStyle() {
 		return bossBarStyle;
 	}
+
 	public String getResetTime() {
 		return resetTime;
 	}
+
 	public ArrayList<TimeLimit> getTimeLimits() {
 		return timeLimits;
 	}
+
 	public boolean isWorldWhitelistEnabled() {
 		return worldWhitelistEnabled;
 	}
+
 	public List<String> getWorldWhitelistWorlds() {
 		return worldWhitelistWorlds;
 	}
+
 	public String getWorldWhitelistTeleportCoordinates() {
 		return worldWhitelistTeleportCoordinates;
 	}
+
 	public ArrayList<Notification> getNotifications() {
 		return notifications;
 	}
+
 	public Notification getNotificationAtTime(int seconds) {
-		for(Notification n : notifications) {
-			if(n.getSeconds() == seconds) {
+		for (Notification n : notifications) {
+			if (n.getSeconds() == seconds) {
 				return n;
 			}
 		}
