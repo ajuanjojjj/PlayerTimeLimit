@@ -16,7 +16,6 @@ import eu.ajuanjojjj.PlayerTimeLimit;
  * {@code new YourExpansionClass().register();}
  */
 public class ExpansionPlayerTimeLimit extends PlaceholderExpansion {
-
 	// We get an instance of the plugin later.
 	private PlayerTimeLimit plugin;
 
@@ -103,7 +102,6 @@ public class ExpansionPlayerTimeLimit extends PlaceholderExpansion {
 	 */
 	@Override
 	public String onPlaceholderRequest(Player player, String identifier) {
-
 		if (player == null) {
 			return "";
 		}
