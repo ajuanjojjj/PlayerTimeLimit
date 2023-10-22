@@ -42,9 +42,7 @@ public class PlayerListener implements Listener {
 				return;
 			}
 
-			int currentTime = p.getCurrentTime();
-			int timeLimit = playerManager.getTimeLimitPlayer(player);
-			if (currentTime >= timeLimit && timeLimit != 0) {
+			if (!playerManager.hasTimeLeft(p)) {
 				FileConfiguration messages = plugin.getMessages();
 				List<String> msg = messages.getStringList("joinErrorMessage");
 				String finalMessage = "";
