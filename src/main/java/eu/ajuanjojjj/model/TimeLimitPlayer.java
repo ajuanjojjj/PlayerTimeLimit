@@ -1,4 +1,4 @@
-package ptl.ajneb97.model;
+package eu.ajuanjojjj.model;
 
 import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;

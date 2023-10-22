@@ -1,4 +1,4 @@
-package ptl.ajneb97.configs.others;
+package eu.ajuanjojjj.configs.others;
 
 public class TimeLimit {
 

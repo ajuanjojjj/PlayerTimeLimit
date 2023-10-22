@@ -1,4 +1,4 @@
-package ptl.ajneb97.libs.actionbar;
+package eu.ajuanjojjj.libs.actionbar;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;

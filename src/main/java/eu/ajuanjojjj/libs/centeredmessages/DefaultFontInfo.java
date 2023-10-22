@@ -1,4 +1,4 @@
-package ptl.ajneb97.libs.centeredmessages;
+package eu.ajuanjojjj.libs.centeredmessages;
 
 public enum DefaultFontInfo{
 	 
