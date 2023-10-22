@@ -74,7 +74,8 @@ public class PlayerListener implements Listener {
 		if (config.getString("update_notification").equals("true")) {
 			if (player.isOp() && !(plugin.version.equals(plugin.latestversion))) {
 				player.sendMessage(
-						plugin.nombrePlugin + ChatColor.RED + " There is a new version available. " + ChatColor.YELLOW +
+						PlayerTimeLimit.nombrePlugin + ChatColor.RED + " There is a new version available. "
+								+ ChatColor.YELLOW +
 								"(" + ChatColor.GRAY + plugin.latestversion + ChatColor.YELLOW + ")");
 				player.sendMessage(ChatColor.RED + "You can download it at: " + ChatColor.GREEN
 						+ "https://www.spigotmc.org/resources/96577/");

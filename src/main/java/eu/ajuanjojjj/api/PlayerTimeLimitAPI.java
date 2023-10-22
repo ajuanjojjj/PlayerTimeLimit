@@ -12,7 +12,7 @@ public class PlayerTimeLimitAPI {
 	private static PlayerTimeLimit plugin;
 
 	public PlayerTimeLimitAPI(PlayerTimeLimit plugin) {
-		this.plugin = plugin;
+		PlayerTimeLimitAPI.plugin = plugin;
 	}
 
 	public static String getTimeLeft(Player player) {

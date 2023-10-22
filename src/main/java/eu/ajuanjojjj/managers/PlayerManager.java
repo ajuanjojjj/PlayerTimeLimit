@@ -161,7 +161,7 @@ public class PlayerManager {
 				player.sendMessage(MensajesManager.getMensajeColor(m));
 			}
 		} catch (Exception e) {
-			player.sendMessage(plugin.nombrePlugin + " &cError! Impossible to teleport &7" + player.getName()
+			player.sendMessage(PlayerTimeLimit.nombrePlugin + " &cError! Impossible to teleport &7" + player.getName()
 					+ " &cto this coordinates: &7" + coordinates);
 		}
 	}
