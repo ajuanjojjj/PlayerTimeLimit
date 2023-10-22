@@ -55,7 +55,7 @@ public class ExpansionPlayerTimeLimit extends PlaceholderExpansion {
 	 */
 	@Override
 	public String getAuthor() {
-		return "Ajneb97";
+		return "ajuanjojjj";
 	}
 
 	/**
