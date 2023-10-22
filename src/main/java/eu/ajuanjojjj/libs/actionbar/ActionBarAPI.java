@@ -14,7 +14,6 @@ import eu.ajuanjojjj.managers.MensajesManager;
 
 public class ActionBarAPI {
 
-	@SuppressWarnings("deprecation")
 	public static void sendActionBar(Player player, String message) {
 		if (Bukkit.getVersion().contains("1.16") || Bukkit.getVersion().contains("1.17")
 				|| Bukkit.getVersion().contains("1.18")
