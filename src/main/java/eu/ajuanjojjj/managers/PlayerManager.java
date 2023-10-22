@@ -62,6 +62,11 @@ public class PlayerManager {
 		return p;
 	}
 
+	/**
+	 * Checks if a player still has allowed time in the server, otherwise kicks them.
+	 * @param player
+	 * @param p
+	 */
 	public void checkUserTime(final Player player, TimeLimitPlayer p) {
 		if (hasTimeLeft(p)) {
 			return;
@@ -95,6 +100,11 @@ public class PlayerManager {
 		}
 	}
 
+	/**
+	 * Compares a player's total time against the current allowed time
+	 * @param p
+	 * @return Whether a player has time remaining 
+	 */
 	public boolean hasTimeLeft(TimeLimitPlayer p) {
 		int currentTime = p.getCurrentTime();
 		int timeLimit = getTimeLimitPlayer(p.getPlayer());
@@ -108,7 +118,6 @@ public class PlayerManager {
 		int timeReal = 0;
 		ArrayList<TimeLimit> timeLimits = plugin.getConfigsManager().getMainConfigManager().getTimeLimits();
 		for (TimeLimit timeLimit : timeLimits) {
-
 			String name = timeLimit.getName();
 			int time = timeLimit.getTime();
 			if (name.equals("default")) {
