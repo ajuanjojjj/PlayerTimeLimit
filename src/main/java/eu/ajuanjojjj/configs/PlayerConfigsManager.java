@@ -36,12 +36,6 @@ public class PlayerConfigsManager {
 		}
 	}
 
-	public void savePlayers() {
-		for (int i = 0; i < configPlayers.size(); i++) {
-			configPlayers.get(i).savePlayerConfig();
-		}
-	}
-
 	public void registerPlayers() {
 		String path = plugin.getDataFolder() + File.separator + "players";
 		File folder = new File(path);
@@ -136,5 +130,11 @@ public class PlayerConfigsManager {
 			players.set("messages", player.isMessageEnabled());
 		}
 		savePlayers();
+	}
+
+	public void savePlayers() {
+		for (PlayerConfig playerConfig : this.configPlayers) {
+			playerConfig.savePlayerConfig();
+		}
 	}
 }
