@@ -1,9 +1,7 @@
 package eu.ajuanjojjj.listeners;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -20,7 +18,6 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 import eu.ajuanjojjj.PlayerTimeLimit;
 import eu.ajuanjojjj.configs.MainConfigManager;
-import eu.ajuanjojjj.configs.others.TimeLimit;
 import eu.ajuanjojjj.managers.MensajesManager;
 import eu.ajuanjojjj.managers.PlayerManager;
 import eu.ajuanjojjj.model.TimeLimitPlayer;

@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import net.md_5.bungee.api.ChatColor;
 import eu.ajuanjojjj.libs.centeredmessages.DefaultFontInfo;
 

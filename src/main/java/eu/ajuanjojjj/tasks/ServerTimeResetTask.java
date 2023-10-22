@@ -2,14 +2,10 @@ package eu.ajuanjojjj.tasks;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-
-import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import eu.ajuanjojjj.PlayerTimeLimit;
 import eu.ajuanjojjj.configs.MainConfigManager;
-import eu.ajuanjojjj.model.TimeLimitPlayer;
 
 public class ServerTimeResetTask {
 

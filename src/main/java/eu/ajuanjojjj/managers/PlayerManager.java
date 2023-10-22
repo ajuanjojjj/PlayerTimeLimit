@@ -3,9 +3,7 @@ package eu.ajuanjojjj.managers;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.core.config.plugins.Plugin;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;

@@ -3,7 +3,6 @@ package eu.ajuanjojjj.configs;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import eu.ajuanjojjj.PlayerTimeLimit;
