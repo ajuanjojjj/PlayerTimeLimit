@@ -155,7 +155,7 @@ public class PlayerTimeLimit extends JavaPlugin {
 
 			if (!textoMessages.contains("commandResetTimeError:")) {
 				messages.set("commandResetTimeError", "&cYou need to use: &7/ptl resettime <player>");
-				messages.set("commandResetTimeCorrect", "&aCurrent time has been reset for player &7%player%&a!");
+				messages.set("commandResetTimeCorrect", "&aTotal time has been reset for player &7%player%&a!");
 				messages.set("commandTakeTimeError", "&cYou need to use: &7/ptl taketime <player> <time>");
 				messages.set("invalidNumber", "&cYou need to use a valid number!");
 				messages.set("commandTakeTimeCorrect", "&aTaken &7%time% seconds &afrom &7%player% &atime!");
@@ -202,24 +202,28 @@ public class PlayerTimeLimit extends JavaPlugin {
 	}
 
 	public void updateChecker() {
-		try {
-			HttpURLConnection con = (HttpURLConnection) new URL(
-					"https://api.spigotmc.org/legacy/update.php?resource=96577").openConnection();
-			int timed_out = 1250;
-			con.setConnectTimeout(timed_out);
-			con.setReadTimeout(timed_out);
-			latestversion = new BufferedReader(new InputStreamReader(con.getInputStream())).readLine();
-			if (latestversion.length() <= 7) {
-				if (!version.equals(latestversion)) {
-					Bukkit.getConsoleSender()
-							.sendMessage(ChatColor.RED + "There is a new version available. " + ChatColor.YELLOW +
-									"(" + ChatColor.GRAY + latestversion + ChatColor.YELLOW + ")");
-					Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "You can download it at: " + ChatColor.WHITE
-							+ "https://www.spigotmc.org/resources/96577/");
-				}
-			}
-		} catch (Exception ex) {
-			Bukkit.getConsoleSender().sendMessage(nombrePlugin + ChatColor.RED + "Error while checking update.");
-		}
+		String msg = "Estas usando la nueva y mejorada PlayerTimeLimit por ajuanjojjj, así que no hay updates. Too bad.";
+		Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE + msg);
+		return;
+
+		// try {
+		// 	HttpURLConnection con = (HttpURLConnection) new URL(
+		// 			"https://api.spigotmc.org/legacy/update.php?resource=96577").openConnection();
+		// 	int timed_out = 1250;
+		// 	con.setConnectTimeout(timed_out);
+		// 	con.setReadTimeout(timed_out);
+		// 	latestversion = new BufferedReader(new InputStreamReader(con.getInputStream())).readLine();
+		// 	if (latestversion.length() <= 7) {
+		// 		if (!version.equals(latestversion)) {
+		// 			Bukkit.getConsoleSender()
+		// 					.sendMessage(ChatColor.RED + "There is a new version available. " + ChatColor.YELLOW +
+		// 							"(" + ChatColor.GRAY + latestversion + ChatColor.YELLOW + ")");
+		// 			Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "You can download it at: " + ChatColor.WHITE
+		// 					+ "https://www.spigotmc.org/resources/96577/");
+		// 		}
+		// 	}
+		// } catch (Exception ex) {
+		// 	Bukkit.getConsoleSender().sendMessage(nombrePlugin + ChatColor.RED + "Error while checking update.");
+		// }
 	}
 }
