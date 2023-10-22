@@ -1,4 +1,4 @@
-package ptl.ajneb97.managers;
+package eu.ajuanjojjj.managers;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -11,10 +11,10 @@ import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.configs.MainConfigManager;
-import ptl.ajneb97.model.TimeLimitPlayer;
-import ptl.ajneb97.utils.UtilsTime;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.configs.MainConfigManager;
+import eu.ajuanjojjj.model.TimeLimitPlayer;
+import eu.ajuanjojjj.utils.UtilsTime;
 
 public class ServerManager {
 

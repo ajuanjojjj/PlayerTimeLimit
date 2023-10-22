@@ -1,4 +1,4 @@
-package ptl.ajneb97.listeners;
+package eu.ajuanjojjj.listeners;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,12 +18,12 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.configs.MainConfigManager;
-import ptl.ajneb97.configs.others.TimeLimit;
-import ptl.ajneb97.managers.MensajesManager;
-import ptl.ajneb97.managers.PlayerManager;
-import ptl.ajneb97.model.TimeLimitPlayer;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.configs.MainConfigManager;
+import eu.ajuanjojjj.configs.others.TimeLimit;
+import eu.ajuanjojjj.managers.MensajesManager;
+import eu.ajuanjojjj.managers.PlayerManager;
+import eu.ajuanjojjj.model.TimeLimitPlayer;
 
 public class PlayerListener implements Listener{
 

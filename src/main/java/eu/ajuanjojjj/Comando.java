@@ -1,4 +1,4 @@
-package ptl.ajneb97;
+package eu.ajuanjojjj;
 
 
 
@@ -12,10 +12,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import ptl.ajneb97.managers.MensajesManager;
-import ptl.ajneb97.managers.PlayerManager;
-import ptl.ajneb97.model.TimeLimitPlayer;
-import ptl.ajneb97.utils.UtilsTime;
+import eu.ajuanjojjj.managers.MensajesManager;
+import eu.ajuanjojjj.managers.PlayerManager;
+import eu.ajuanjojjj.model.TimeLimitPlayer;
+import eu.ajuanjojjj.utils.UtilsTime;
 
 
 

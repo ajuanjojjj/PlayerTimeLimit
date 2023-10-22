@@ -1,8 +1,8 @@
-package ptl.ajneb97.tasks;
+package eu.ajuanjojjj.tasks;
 
 import org.bukkit.scheduler.BukkitRunnable;
 
-import ptl.ajneb97.PlayerTimeLimit;
+import eu.ajuanjojjj.PlayerTimeLimit;
 
 public class DataSaveTask {
 

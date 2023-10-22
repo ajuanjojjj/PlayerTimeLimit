@@ -1,10 +1,10 @@
-package ptl.ajneb97.utils;
+package eu.ajuanjojjj.utils;
 
 import java.util.Calendar;
 
 import org.bukkit.Bukkit;
 
-import ptl.ajneb97.managers.MensajesManager;
+import eu.ajuanjojjj.managers.MensajesManager;
 
 public class UtilsTime {
 

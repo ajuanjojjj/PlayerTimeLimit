@@ -1,4 +1,4 @@
-package ptl.ajneb97.managers;
+package eu.ajuanjojjj.managers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +12,11 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.configs.MainConfigManager;
-import ptl.ajneb97.configs.others.TimeLimit;
-import ptl.ajneb97.model.TimeLimitPlayer;
-import ptl.ajneb97.utils.UtilsTime;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.configs.MainConfigManager;
+import eu.ajuanjojjj.configs.others.TimeLimit;
+import eu.ajuanjojjj.model.TimeLimitPlayer;
+import eu.ajuanjojjj.utils.UtilsTime;
 
 public class PlayerManager {
 

@@ -1,4 +1,4 @@
-package ptl.ajneb97.tasks;
+package eu.ajuanjojjj.tasks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,17 +11,17 @@ import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.configs.MainConfigManager;
-import ptl.ajneb97.configs.others.Notification;
-import ptl.ajneb97.configs.others.TimeLimit;
-import ptl.ajneb97.libs.actionbar.ActionBarAPI;
-import ptl.ajneb97.libs.bossbar.BossBarAPI;
-import ptl.ajneb97.managers.MensajesManager;
-import ptl.ajneb97.managers.PlayerManager;
-import ptl.ajneb97.managers.ServerManager;
-import ptl.ajneb97.model.TimeLimitPlayer;
-import ptl.ajneb97.utils.UtilsTime;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.configs.MainConfigManager;
+import eu.ajuanjojjj.configs.others.Notification;
+import eu.ajuanjojjj.configs.others.TimeLimit;
+import eu.ajuanjojjj.libs.actionbar.ActionBarAPI;
+import eu.ajuanjojjj.libs.bossbar.BossBarAPI;
+import eu.ajuanjojjj.managers.MensajesManager;
+import eu.ajuanjojjj.managers.PlayerManager;
+import eu.ajuanjojjj.managers.ServerManager;
+import eu.ajuanjojjj.model.TimeLimitPlayer;
+import eu.ajuanjojjj.utils.UtilsTime;
 
 public class PlayerTimeTask {
 

@@ -1,4 +1,4 @@
-package ptl.ajneb97.libs.bossbar;
+package eu.ajuanjojjj.libs.bossbar;
 
 import org.bukkit.Bukkit;
 import org.bukkit.boss.BarColor;
@@ -7,7 +7,7 @@ import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
 
-import ptl.ajneb97.managers.MensajesManager;
+import eu.ajuanjojjj.managers.MensajesManager;
 
 public class BossBarAPI {
 

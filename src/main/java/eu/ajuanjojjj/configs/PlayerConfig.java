@@ -1,4 +1,4 @@
-package ptl.ajneb97.configs;
+package eu.ajuanjojjj.configs;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import ptl.ajneb97.PlayerTimeLimit;
+import eu.ajuanjojjj.PlayerTimeLimit;
 
 
 public class PlayerConfig {

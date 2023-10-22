@@ -1,4 +1,4 @@
-package ptl.ajneb97.configs;
+package eu.ajuanjojjj.configs;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.io.UnsupportedEncodingException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.managers.MensajesManager;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.managers.MensajesManager;
 
 public class MensajesConfigManager {
 

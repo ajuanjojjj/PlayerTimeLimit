@@ -1,6 +1,6 @@
-package ptl.ajneb97.configs;
+package eu.ajuanjojjj.configs;
 
-import ptl.ajneb97.PlayerTimeLimit;
+import eu.ajuanjojjj.PlayerTimeLimit;
 
 public class ConfigsManager {
 

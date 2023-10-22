@@ -1,11 +1,11 @@
-package ptl.ajneb97.api;
+package eu.ajuanjojjj.api;
 
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
-import ptl.ajneb97.PlayerTimeLimit;
+import eu.ajuanjojjj.PlayerTimeLimit;
 /**
  * This class will automatically register as a placeholder expansion 
  * when a jar including this class is added to the directory 

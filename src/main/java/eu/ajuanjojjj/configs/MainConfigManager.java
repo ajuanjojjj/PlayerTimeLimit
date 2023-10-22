@@ -1,4 +1,4 @@
-package ptl.ajneb97.configs;
+package eu.ajuanjojjj.configs;
 
 
 import java.util.ArrayList;
@@ -7,9 +7,9 @@ import java.util.List;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.configs.others.Notification;
-import ptl.ajneb97.configs.others.TimeLimit;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.configs.others.Notification;
+import eu.ajuanjojjj.configs.others.TimeLimit;
 
 public class MainConfigManager {
 

@@ -1,4 +1,4 @@
-package ptl.ajneb97;
+package eu.ajuanjojjj;
 
 
 import java.io.BufferedReader;
@@ -21,16 +21,16 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import ptl.ajneb97.api.ExpansionPlayerTimeLimit;
-import ptl.ajneb97.api.PlayerTimeLimitAPI;
-import ptl.ajneb97.configs.ConfigsManager;
-import ptl.ajneb97.listeners.PlayerListener;
-import ptl.ajneb97.managers.MensajesManager;
-import ptl.ajneb97.managers.PlayerManager;
-import ptl.ajneb97.managers.ServerManager;
-import ptl.ajneb97.tasks.DataSaveTask;
-import ptl.ajneb97.tasks.PlayerTimeTask;
-import ptl.ajneb97.tasks.ServerTimeResetTask;
+import eu.ajuanjojjj.api.ExpansionPlayerTimeLimit;
+import eu.ajuanjojjj.api.PlayerTimeLimitAPI;
+import eu.ajuanjojjj.configs.ConfigsManager;
+import eu.ajuanjojjj.listeners.PlayerListener;
+import eu.ajuanjojjj.managers.MensajesManager;
+import eu.ajuanjojjj.managers.PlayerManager;
+import eu.ajuanjojjj.managers.ServerManager;
+import eu.ajuanjojjj.tasks.DataSaveTask;
+import eu.ajuanjojjj.tasks.PlayerTimeTask;
+import eu.ajuanjojjj.tasks.ServerTimeResetTask;
 
 
 

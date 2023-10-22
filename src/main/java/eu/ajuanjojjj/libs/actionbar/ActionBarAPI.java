@@ -1,4 +1,4 @@
-package ptl.ajneb97.libs.actionbar;
+package eu.ajuanjojjj.libs.actionbar;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -9,8 +9,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import ptl.ajneb97.PlayerTimeLimit;
-import ptl.ajneb97.managers.MensajesManager;
+import eu.ajuanjojjj.PlayerTimeLimit;
+import eu.ajuanjojjj.managers.MensajesManager;
 
 public class ActionBarAPI
 {
