@@ -33,9 +33,8 @@ public class PlayerListener implements Listener {
 	@EventHandler
 	public void onPreJoin(PlayerLoginEvent event) {
 		Player player = event.getPlayer();
-		String uuid = player.getUniqueId().toString();
 		PlayerManager playerManager = plugin.getPlayerManager();
-		TimeLimitPlayer p = playerManager.getPlayerByUUID(uuid);
+		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 		if (p != null) {
 			// Si entra al server y esta activada la world whitelist no se le
 			// expulsa al intentar entrar al server
@@ -63,7 +62,7 @@ public class PlayerListener implements Listener {
 		Player player = event.getPlayer();
 
 		PlayerManager playerManager = plugin.getPlayerManager();
-		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
+		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 		if (p == null) {
 			p = playerManager.createPlayer(player);
 		}
@@ -88,7 +87,7 @@ public class PlayerListener implements Listener {
 		Player player = event.getPlayer();
 
 		PlayerManager playerManager = plugin.getPlayerManager();
-		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
+		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 		if (p != null) {
 			p.setPlayer(null);
 			p.eliminarBossBar();
@@ -101,7 +100,7 @@ public class PlayerListener implements Listener {
 		if (cause.equals(TeleportCause.PLUGIN) || cause.equals(TeleportCause.COMMAND)) {
 			Player player = event.getPlayer();
 			PlayerManager playerManager = plugin.getPlayerManager();
-			TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
+			TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 			if (p == null) {
 				return;
 			}

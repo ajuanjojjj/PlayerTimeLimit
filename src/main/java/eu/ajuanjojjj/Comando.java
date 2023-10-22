@@ -113,7 +113,7 @@ public class Comando implements CommandExecutor {
 
 	public void message(String[] args, Player player, FileConfiguration messages, MensajesManager msgManager) {
 		// /ptl message
-		TimeLimitPlayer p = plugin.getPlayerManager().getPlayerByUUID(player.getUniqueId().toString());
+		TimeLimitPlayer p = plugin.getPlayerManager().getPlayerByUUID(player.getUniqueId());
 		boolean messagesEnabled = p.isMessageEnabled();
 		if (messagesEnabled) {
 			msgManager.enviarMensaje(player, messages.getString("messageDisabled"), true);
@@ -139,7 +139,7 @@ public class Comando implements CommandExecutor {
 		// /ptl check <player>
 		TimeLimitPlayer p = null;
 		if (args.length == 1) {
-			p = plugin.getPlayerManager().getPlayerByUUID(player.getUniqueId().toString());
+			p = plugin.getPlayerManager().getPlayerByUUID(player.getUniqueId());
 		} else {
 			if (player.isOp() || player.hasPermission("playertimelimit.admin")
 					|| player.hasPermission("playertimelimit.command.check.others")) {

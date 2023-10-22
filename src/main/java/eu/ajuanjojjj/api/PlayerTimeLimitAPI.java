@@ -17,14 +17,14 @@ public class PlayerTimeLimitAPI {
 
 	public static String getTimeLeft(Player player) {
 		PlayerManager playerManager = plugin.getPlayerManager();
-		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
+		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 		int timeLimit = playerManager.getTimeLimitPlayer(player);
 		return playerManager.getTimeLeft(p, timeLimit);
 	}
 
 	public static String getTotalTime(Player player) {
 		PlayerManager playerManager = plugin.getPlayerManager();
-		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId().toString());
+		TimeLimitPlayer p = playerManager.getPlayerByUUID(player.getUniqueId());
 		return UtilsTime.getTime(p.getTotalTime(), plugin.getMensajesManager());
 	}
 }

@@ -2,6 +2,7 @@ package eu.ajuanjojjj.managers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -34,9 +35,9 @@ public class PlayerManager {
 		this.players = players;
 	}
 
-	public TimeLimitPlayer getPlayerByUUID(String uuid) {
+	public TimeLimitPlayer getPlayerByUUID(UUID uuid) {
 		for (TimeLimitPlayer p : players) {
-			if (p.getUuid().equals(uuid)) {
+			if (p.getUuid().equals(uuid.toString())) {
 				return p;
 			}
 		}
